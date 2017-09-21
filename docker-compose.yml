@@ -64,4 +64,3 @@ services:
 
 networks:
   default:
-    name: nginx-proxy
