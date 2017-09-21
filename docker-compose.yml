@@ -61,6 +61,3 @@ services:
       - LETSENCRYPT_EMAIL=deenoize@gmail.com
     expose:
       - 9000
-
-networks:
-  default:
