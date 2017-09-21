@@ -64,4 +64,4 @@ services:
 
 networks:
   default:
-    nginx-proxy:
+    name: nginx-proxy
