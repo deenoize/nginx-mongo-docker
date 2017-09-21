@@ -63,4 +63,5 @@ services:
       - 9000
 
 networks:
-  nginx-proxy:
+  default:
+    nginx-proxy:
