@@ -14,3 +14,9 @@ curl https://raw.githubusercontent.com/jwilder/nginx-proxy/master/nginx.tmpl > n
 ```bash
 docker-compose up -d
 ```
+
+## Update single container after changes
+
+```bash
+docker-compose up -d --no-deps --build <service_name>
+```
