@@ -53,6 +53,7 @@ services:
     container_name: portainer
     restart: unless-stopped
     volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
       - /opt/portainer/data:/data
     environment:
       - VIRTUAL_HOST=portainer.moneta.fund
