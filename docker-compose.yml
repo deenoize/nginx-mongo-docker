@@ -70,3 +70,11 @@ services:
       - LETSENCRYPT_EMAIL=deenoize@gmail.com
     expose:
       - 9000
+
+  watchtower:
+    image: v2tec/watchtower
+    container_name: watchtower
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - /root/.docker/config.json:/config.json
+    command: --cleanup
